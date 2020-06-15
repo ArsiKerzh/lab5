@@ -14,7 +14,7 @@ pthread_mutex_t writeMut;
 pthread_mutex_t delMut;
 
 void* threadWrite(void *ptr) {
-    char path[] = "/home/antosa2972/lab5/files/result";
+    char path[] = "/home/arseniy/lab5/files/result";
     int pos = 0;
     int quantity = 0;
 
@@ -36,12 +36,12 @@ void* threadWrite(void *ptr) {
 }
 
 int main() {
-    char path[] = "/home/antosa2972/lab5/files/a";
+    char path[] = "/home/arseniy/lab5/files/a";
     unsigned int count = 1;
     pthread_t thread;
     char buffer[BUFSIZ] = {};
 
-    handle = dlopen("/home/antosa2972/lab5/libfsdyn.so", RTLD_LAZY);
+    handle = dlopen("/home/arseniy/lab5/libfsdyn.so", RTLD_LAZY);
     if(!handle){
 	puts("ERROR So");
 	getchar();
